@@ -38,6 +38,12 @@
                 <div class="about-text">
                     <p>Welcome to my space on the web! I'm a passionate developer with a love for creating elegant solutions to complex problems. Whether it's building interactive web applications or exploring new technologies, I'm always excited to learn and grow.</p>
                     <p>When I'm not coding, you can find me exploring new ideas, contributing to open source projects, or sharing what I've learned with the community.</p>
+                    <div class="about-buttons">
+                        <button class="info-button" data-info="journey">My Journey</button>
+                        <button class="info-button" data-info="interests">Interests</button>
+                        <button class="info-button" data-info="goals">Goals</button>
+                    </div>
+                    <div id="info-content" class="info-content"></div>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
@@ -62,21 +68,45 @@
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-skill="frontend">
                     <h3>Frontend</h3>
                     <p>React • JavaScript • HTML/CSS • Vue.js</p>
+                    <button class="expand-button">Learn More ▼</button>
+                    <div class="skill-details" style="display:none;">
+                        <p><strong>Proficiency:</strong> Advanced</p>
+                        <p><strong>Years:</strong> 4+</p>
+                        <p><strong>Projects:</strong> 15+</p>
+                    </div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-skill="backend">
                     <h3>Backend</h3>
                     <p>Python • Node.js • Express • SQL</p>
+                    <button class="expand-button">Learn More ▼</button>
+                    <div class="skill-details" style="display:none;">
+                        <p><strong>Proficiency:</strong> Advanced</p>
+                        <p><strong>Years:</strong> 5+</p>
+                        <p><strong>Projects:</strong> 12+</p>
+                    </div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-skill="tools">
                     <h3>Tools & Platforms</h3>
                     <p>Git • Docker • AWS • VS Code</p>
+                    <button class="expand-button">Learn More ▼</button>
+                    <div class="skill-details" style="display:none;">
+                        <p><strong>Proficiency:</strong> Intermediate</p>
+                        <p><strong>Years:</strong> 3+</p>
+                        <p><strong>Projects:</strong> 8+</p>
+                    </div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-skill="design">
                     <h3>Design</h3>
                     <p>UI/UX • Figma • Responsive Design</p>
+                    <button class="expand-button">Learn More ▼</button>
+                    <div class="skill-details" style="display:none;">
+                        <p><strong>Proficiency:</strong> Intermediate</p>
+                        <p><strong>Years:</strong> 2+</p>
+                        <p><strong>Projects:</strong> 10+</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,6 +125,14 @@
                         <span class="tag">Node.js</span>
                         <span class="tag">MongoDB</span>
                     </div>
+                    <button class="project-button">View Details</button>
+                    <div class="project-details" style="display:none;">
+                        <h4>Project Details</h4>
+                        <p><strong>Duration:</strong> 3 months</p>
+                        <p><strong>Role:</strong> Full Stack Developer</p>
+                        <p><strong>Key Features:</strong> Real-time notifications, User authentication, Data persistence</p>
+                        <a href="#" class="detail-link">View Live Site →</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">Project Two</div>
@@ -104,6 +142,14 @@
                         <span class="tag">D3.js</span>
                         <span class="tag">Python</span>
                     </div>
+                    <button class="project-button">View Details</button>
+                    <div class="project-details" style="display:none;">
+                        <h4>Project Details</h4>
+                        <p><strong>Duration:</strong> 2 months</p>
+                        <p><strong>Role:</strong> Frontend Developer</p>
+                        <p><strong>Key Features:</strong> Interactive charts, Real-time data updates, Export functionality</p>
+                        <a href="#" class="detail-link">View Live Site →</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">Project Three</div>
@@ -112,6 +158,14 @@
                         <span class="tag">JavaScript</span>
                         <span class="tag">Open Source</span>
                         <span class="tag">npm</span>
+                    </div>
+                    <button class="project-button">View Details</button>
+                    <div class="project-details" style="display:none;">
+                        <h4>Project Details</h4>
+                        <p><strong>Duration:</strong> Ongoing</p>
+                        <p><strong>Role:</strong> Creator & Maintainer</p>
+                        <p><strong>Key Features:</strong> 50+ GitHub stars, 1000+ npm downloads, Comprehensive documentation</p>
+                        <a href="#" class="detail-link">View on GitHub →</a>
                     </div>
                 </div>
             </div>

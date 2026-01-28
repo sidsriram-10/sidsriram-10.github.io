@@ -190,6 +190,49 @@ body {
     line-height: 1.8;
 }
 
+.about-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.info-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.info-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.info-button.active {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.info-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 1.5rem;
+    animation: slideIn 0.3s ease;
+}
+
+.info-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -264,6 +307,40 @@ body {
 .skill-card p {
     color: var(--text-light);
     font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.expand-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.expand-button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.02);
+}
+
+.skill-details {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    animation: slideIn 0.3s ease;
+}
+
+.skill-details p {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 
 /* Projects Section */
@@ -318,6 +395,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .tag {
@@ -327,6 +405,59 @@ body {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+}
+
+.project-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.project-button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.02);
+}
+
+.project-details {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    animation: slideIn 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.project-details h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.project-details p {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+.detail-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+
+.detail-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
 }
 
 /* Contact Section */
@@ -387,6 +518,17 @@ body {
     from {
         opacity: 0;
         transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
     to {
         opacity: 1;
